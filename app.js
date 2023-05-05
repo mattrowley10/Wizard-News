@@ -73,7 +73,7 @@ app.use((err, req, res, next)=>{
   res.send(404).send('Page Not Found')
 })
 
-const PORT = 1337;
+const {PORT = 1337} = process.env 
 
 app.listen(PORT, () => {
   console.log(`App listening in port ${PORT}`);
